@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BlueOcean - Каталог</title>
+    <link rel="stylesheet" property="stylesheet" href="front.css"/>
+  </head>
+  <body>
+    <div class="set">
+      <header class="header">
+        <div class="section">
+          <div class="header__inner"><a class="header__logo" href="/"><img class="header__img" src="img/logo.png"></a>
+            <form class="header__form" data-submit="submit-form">
+              <input class="header__form-input" type="text" data-outfocus="outInput">
+              <button class="header__form-btn" type="button" data-click="toggleInput">
+                <svg class="header__form-icon fill-none">
+                  <use xlink:href="img/sprite.svg#search"></use>
+                </svg>Поиск
+              </button>
+            </form>
+            <nav class="header__menu menu">
+              <ul class="menu__list">
+                <li class="menu__item"><a class="menu__link" href="./about.html">О компании</a></li>
+                <li class="menu__item"><a class="menu__link" href="./catalog.html">Каталог</a></li>
+                <li class="menu__item"><a class="menu__link" href="./contact.html">Контакты</a></li>
+                <li class="menu__item"><a class="menu__link" href="/#reviews">Отзывы</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">
+                    <svg class="menu__icon">
+                      <use xlink:href="img/sprite.svg#download"></use>
+                    </svg>Скачать прайс-лист</a></li>
+                <li class="menu__item"><a class="menu__link" href="tel:+7(700)4955055">
+                    <svg class="menu__icon">
+                      <use xlink:href="img/sprite.svg#phone"></use>
+                    </svg>+7(700)4955055</a></li>
+              </ul>
+            </nav>
+            <button class="header__toggle" data-click="burger"><span class="header__line"></span><span class="header__line"></span><span class="header__line"></span></button>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <section class="about-company"> 
+          <div class="section"> 
+            <div class="about-company__wrapper">
+              <div class="about-company__info">
+                <h1 class="about-company__title title title--sm">О компании</h1>
+                <p class="about-company__desrc">"Голубой океан" является динамично развивающейся компанией в сфере реализации полимерных труб, фитингов, радиаторов и теплых полов, применяемых в строительстве наружных инженерных систем, систем холодного водоснабжения, напорного водоотведения с пятнадцатилетним опытом на рынке.</p>
+              </div>
+              <div class="about-company__img"><img src="img/about-company-img.png" alt="О нас"></div>
+            </div>
+          </div>
+        </section>
+        <section class="advantages"> 
+          <div class="section"> 
+            <div class="advantages__wrapper">
+              <div class="advantages__item">
+                <h2 class="advantages__title title title--sm">сервис</h2>
+                <p class="advantages__descr">Одно из важных направлений нашей деятельности — высокое качество товаров, которые приобретает покупатель. Квалифицированные специалисты нашей компании всегда помогут с выбором.</p>
+              </div>
+              <div class="advantages__item">
+                <h2 class="advantages__title title title--sm">Преимущество</h2>
+                <p class="advantages__descr">Крупные конкуренты не всегда успевают реагировать на тенденции и веяния рынка, что довольно успешно получается у нас. Поэтому мы всегда рады предложить актуальные товары.</p>
+              </div>
+              <div class="advantages__item">
+                <h2 class="advantages__title title title--sm">сервис</h2>
+                <p class="advantages__descr">В нашем каталоге представлены товары от ведущих производителей, качество изделий которых проверено годами эксплуатации. </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="requisite">
+          <div class="section">
+            <div class="requisite__wrapper">
+              <h2 class="requisite__title title title--sm">Реквизиты</h2>
+              <ul class="requisite__list">
+                <li class="requisite__list-item"><span>Наименование:</span> ИП «Компания»</li>
+                <li class="requisite__list-item"><span>Юридический адрес:</span> ​пр. Нуркена Абдирова, 19 Казыбек Би район, Караганда, 100017/M01E7Y2</li>
+                <li class="requisite__list-item"><span>БИН:</span> 080240005150;</li>
+                <li class="requisite__list-item"><span>БИК:</span> ALMNKZKA.</li>
+              </ul><a class="requisite__download" href="#">
+                <svg>
+                  <use xlink:href="img/sprite.svg#download"></use>
+                </svg>Скачать</a>
+            </div>
+          </div>
+        </section>
+        <section class="consultation">
+          <div class="section">
+            <div class="consultation__wrapper">
+              <div class="consultation__info">
+                <h2 class="consultation__title">Получите бесплатную консультацию</h2>
+                <ul class="consultation__contact">
+                  <li class="consultation__contact-item consultation__contact-item--phone">+7 721 247 67 88</li>
+                  <li class="consultation__contact-item consultation__contact-item--envelope">mail@blue-ocean.kz</li>
+                </ul>
+              </div>
+              <form class="consultation__form" action="#" data-submit="submutUserConsult">
+                <div class="consultation__form-group">
+                  <input type="hidden" name="consultFormSource" value="Заявка на консультацию">
+                  <input class="consultation__form-input form-input" type="tel" name="consult-phone" placeholder="+7 (777) 777-77-77"><small class="contacts__form-error">Ошибка</small>
+                </div><span class="consultation__form-label">Ваш номер телефона</span>
+                <button class="consultation__form-btn btn btn--alt" type="submit">Отправить</button>
+              </form>
+            </div>
+          </div>
+        </section>
+        <div class="popup" data-click="closePopup">
+          <div class="popup__wrapper"> 
+            <div class="popup__success">
+              <div class="popup__content"> 
+                <div class="popup__icon"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130.2 130.2">
+<circle class="path circle" fill="none" stroke="#73AF55" stroke-width="6" stroke-miterlimit="10" cx="65.1" cy="65.1" r="62.1"/>
+<polyline class="path check" fill="none" stroke="#73AF55" stroke-width="6" stroke-linecap="round" stroke-miterlimit="10" points="100.2,40.2 51.5,88.8 29.8,67.5 "/>
+</svg>
+                </div>
+                <h2 class="popup__title">Успешно!</h2>
+                <p class="popup__descr">Ваша заявка принята! Ожидайте</p>
+              </div>
+            </div>
+            <div class="popup__error">
+              <div class="popup__content"> 
+                <div class="popup__icon"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130.2 130.2">
+<circle class="path circle" fill="none" stroke="#D06079" stroke-width="6" stroke-miterlimit="10" cx="65.1" cy="65.1" r="62.1"/>
+<line class="path line" fill="none" stroke="#D06079" stroke-width="6" stroke-linecap="round" stroke-miterlimit="10" x1="34.4" y1="37.9" x2="95.8" y2="92.3"/>
+<line class="path line" fill="none" stroke="#D06079" stroke-width="6" stroke-linecap="round" stroke-miterlimit="10" x1="95.8" y1="38" x2="34.4" y2="92.2"/>
+</svg>
+                </div>
+                <h2 class="popup__title">Ой!</h2>
+                <p class="popup__descr">Что-то пошло не так...</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="section">
+          <div class="footer__top"><a class="footer__logo" href="#"><img src="img/logo.png" alt=""></a>
+            <p class="footer__desrc">ИП “Голубой океан” использует файлы “cookie”, с целью персонализации сервисов и повышения удобства пользования веб-сайтом. “Cookie” представляют собой небольшие файлы, содержащие информацию о предыдущих посещениях веб-сайта. Если вы не хотите использовать файлы “cookie”, измените настройки браузера.</p>
+            <ul class="footer__social">
+              <li class="footer__social-item"><a class="footer__social-link footer__social-link--whatsapp" href="#">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#whatsapp"></use>
+                  </svg></a></li>
+              <li class="footer__social-item"><a class="footer__social-link footer__social-link--insta" href="#">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#instagram"></use>
+                  </svg></a></li>
+            </ul>
+          </div>
+          <div class="footer__bottom">
+            <p class="footer__copyright">Все права защищены ©  ИП “Голубой океан” 2007 — 2021</p>
+            <ul class="footer__bottom-list">
+              <li class="footer__bottom-item"><a class="footer__bottom-link" href="#">гарантия и возврат</a></li>
+              <li class="footer__bottom-item"><a class="footer__bottom-link" href="#">Политика конфиденциальности</a></li>
+            </ul>
+          </div>
+        </div>
+        <script async="async" src="front.js" type="module"></script>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,9 @@
+$(document).ready(function(){
+    $('.wrapper_slide').slick({
+        arrows:true,
+        dots:true,
+        slidesToShow:1,
+        appendArrows:$('.wrapper_slide'),
+        appendDots:$('.slider')
+    });
+});
